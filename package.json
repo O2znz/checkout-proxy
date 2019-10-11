@@ -1,12 +1,13 @@
 {
-  "name": "react-starter",
+  "name": "calendar",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "react-dev": "webpack -w",
-    "start": "nodemon ./server/index.js"
+    "start": "nodemon ./server/index.js",
+    "seed-db": "node ./database/seedDB.js"
   },
   "keywords": [],
   "author": "",
@@ -23,10 +24,18 @@
     "axios": "^0.19.0",
     "body-parser": "^1.19.0",
     "express": "^4.15.0",
+    "faker": "^4.1.0",
     "mysql": "^2.16.0",
     "nodemon": "^1.19.2",
     "react": "^16.10.1",
-    "react-dom": "^16.10.1"
+    "react-dom": "^16.10.1",
+    "moment": "^2.24.0",
+    "mongoose": "^4.6.4",
+    "path": "^0.12.7",
+    "styled-components": "^4.4.0",
+    "jest-environment-enzyme": "^7.1.1",
+    "jest-enzyme": "^7.1.1",
+    "identity-obj-proxy": "^3.0.0"
   },
   "babel": {
     "presets": [
