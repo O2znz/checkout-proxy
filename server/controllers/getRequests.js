@@ -4,12 +4,7 @@ mongoose.connect('mongodb://localhost/reservations', {useNewUrlParser: true});
 
 var getInitialData = function(id, callback) {
   Booking.findOne({listingId: id}).then((data) => {
-    var initialData = {
-      price: data.Price,
-      rating: data.Rating,
-      listingId: data.listingId
-    }
-    callback(null, initialData)
+    callback(null, data)
   })
   .catch((err) => {
     callback(err)
