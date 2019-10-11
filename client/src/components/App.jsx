@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+//import {mount, shallow} from 'enzyme';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       listingInfo: [],
+      test: 2
     };
     this.initialize = this.initialize.bind(this)
   }
@@ -31,5 +33,12 @@ class App extends Component {
     );
   }
 }
+
+// const appWrap = mount(<App/>)
+
+// test('expects App to have state listingInfo', () => {
+//     expect(appWrap).toHaveState('listingInfo');
+// });
+
 
 export default App;
