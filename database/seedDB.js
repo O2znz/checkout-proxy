@@ -36,7 +36,7 @@ var generateDummyData = function() {
     data = [];
     n = 0;
 
-
+//TODO FIX ID 
   var listing =  function () {
     var reservation = {
       listingId: listId(),
@@ -64,9 +64,6 @@ var generateDummyData = function() {
 
 var seedData = generateDummyData()
 
-console.log(seedData[0])
-
-console.log("seed-db is in fact working **************")
 
 seedDatabase(seedData);
 
