@@ -1,26 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-
-<body>
-  <!-- Provide the div with id app for the ReactDOM method to attach to -->
-  <div id="app">
-    React not loaded
-  </div>
-  <div id="checkout">
-    Checkout not loaded.
-  </div>
-  <!-- Import the compiled bundle which contains our entire react app  -->
-  <script type="text/javascript" src="bundle.js"></script>
-  <script src="https://fb.me/react-0.14.3.js"></script>
-<script src="https://fb.me/react-dom-0.14.3.js"></script>
-</body>
-
-
+  <head>
+    <meta charset="UTF-8">
+    <title>FEC Demo</title>
+  </head>
+  <body>
+    <div id="checkout"></div>
+    <div id="test"></div>
+    <div id="photo-gallery"></div>
+    <div id="root"></div>
+    <script src="https://fb.me/react-0.14.3.js"></script>
+    <script src="https://fb.me/react-dom-0.14.3.js"></script>
+    <script src="http://localhost:3001/:id/bundle.js"></script>
+    <script src="http://localhost:3002/bundle.js"></script>
+    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
+  </body>
 </html>
