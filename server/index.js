@@ -10,11 +10,12 @@ app.use('/:id', express.static(path.join(__dirname, '../client/dist')));
 app.use(bodyparser.json());
 
 app.get('/photos/:listingid', (req, res) => {
-    request(`http://18.217.122.245/photos/${req.params.listingid}`, (error, response, body) => {
+    request(`http://3.133.19.147/photos/${req.params.listingid}`, (error, response, body) => {
       if (error) return res.end();
       res.send(JSON.parse(body));
     });
 });
+
 
 app.get('/photos/:listingid', (req, res) => {
     request(`http://ec2-18-219-230-255.us-east-2.compute.amazonaws.com/reviews`, (error, response, body) => {
