@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "react-dev": "webpack -w",
-    "start": "nodemon ./server/index.js",
+    "start": "node ./server/index.js",
     "seed-db": "node ./database/seedDB.js"
   },
   "keywords": [],
@@ -31,6 +31,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest-environment-enzyme": "^7.1.1",
     "jest-enzyme": "^7.1.1",
+    "lerna": "^3.18.3",
     "moment": "^2.24.0",
     "mongoose": "^4.6.4",
     "morgan": "^1.9.1",
@@ -39,8 +40,7 @@
     "path": "^0.12.7",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
-    "request": "^2.88.0",
-    "styled-components": "^4.4.0"
+    "request": "^2.88.0"
   },
   "babel": {
     "presets": [
