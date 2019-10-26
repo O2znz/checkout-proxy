@@ -26,12 +26,27 @@ app.get('/photos/:listingid', (req, res) => {
 });
 
 app.get('/api/recommendations', (req, res) => {
-    request(`http://ec2-13-58-95-198.us-east-2.compute.amazonaws.com:3004/api/recommendations`, (error, response, body) => {
+    request(`http://18.218.105.195:3004/api/recommendations`, (error, response, body) => {
       if (error) return res.end();
       console.log(body)
       res.send(JSON.parse(body));
     });
 });
+
+// app.get('/', (req, res) => {
+//   request(`http://18.191.134.91`, (error, response, body) => {
+//     if (error) return res.end();
+//     res.send(JSON.parse(body));
+//   });
+// });
+
+// app.get('/experiences', (req, res) => {
+//   request(`http://18.191.134.91/experiences`, (error, response, body) => {
+//     if (error) return res.end();
+//     res.send(JSON.parse(body));
+//   });
+// });
+
 
 
 app.listen(port, () => console.log('Listening on port: ' + port));
