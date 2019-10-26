@@ -17,7 +17,7 @@ app.get('/photos/:listingid', (req, res) => {
 });
 
 
-app.get('/photos/:listingid', (req, res) => {
+app.get('/reviews/:listingid', (req, res) => {
     request(`http://ec2-18-219-230-255.us-east-2.compute.amazonaws.com/reviews`, (error, response, body) => {
       if (error) return res.end();
       console.log('body obj of photos get request!!!! ', body, 'body obj of photos get request!!!!')
